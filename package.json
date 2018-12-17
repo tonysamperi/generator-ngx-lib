@@ -1,8 +1,8 @@
 {
-  "name": "generator-ngx-libtwo",
-  "version": "1.0.0",
+  "name": "generator-ngx-lib",
+  "version": "1.0.1",
   "description": "Generator to create an Angular 5+ library",
-  "homepage": "https://github.com/tonysamperi/generator-ngx-libtwo",
+  "homepage": "https://github.com/tonysamperi/generator-ngx-lib",
   "author": {
     "name": "Tony Samperi",
     "email": "github@tonysamperi.it",
@@ -34,7 +34,7 @@
     "gulp-plumber": "^1.1.0",
     "yeoman-assert": "^3.1.1"
   },
-  "repository": "tonysamperi/generator-ngx-libtwo",
+  "repository": "tonysamperi/generator-ngx-lib",
   "scripts": {
     "prepublishOnly": "gulp prepublish",
     "test": "gulp"

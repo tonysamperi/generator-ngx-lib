@@ -1,4 +1,4 @@
-![generator-ngx-lib](https://user-images.githubusercontent.com/5957244/46132460-571bca00-c23e-11e8-9d9c-1b339d8c6358.jpg)
+![generator-ngx-lib-banner]
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
@@ -30,6 +30,8 @@ More specifically, the latest version of this generator:
 This generator is built for Angular version 5 and above, hence the name **ngx-lib**. 
 
 ## Quick start
+
+![generator-cmd-demo]
 
 First, install [Yeoman](http://yeoman.io) and generator-ngx-lib using [npm](https://www.npmjs.com/) (assuming you already have [node.js](https://nodejs.org/) pre-installed).
 
@@ -247,15 +249,13 @@ To learn more about Angular Dependency Injection, check out the [Official Angula
 
 ## Preview your library during development
 
-To preview your library code during development, start the playground:
+To preview your library code during development, start the ng-serve:
 
 ```bash
-$ npm run playground
+$ npm run start
 ```
 
-Changes to your library code will be updated live in the browser window:
-
-![playground](https://user-images.githubusercontent.com/1859381/30514111-576fcf4e-9b0f-11e7-837d-169d08667c2c.gif)
+Changes to your library code will be updated live in the browser window
 
 ## Consuming your library in a local application during development
 
@@ -487,8 +487,14 @@ MIT © [Tony Samperi](http://tonysamperi.github.io)
 ### v1.0.0
 - Release!!
 
-[npm-image]: https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.0.0&x2=0
-[npm-url]: https://npmjs.org/package/generator-angular2-library
+### v1.0.1
+- Info updated!
+
+
+[generator-ngx-lib-banner]: https://user-images.githubusercontent.com/5957244/50081526-ff627e80-01ee-11e9-8789-2abcbb522e05.jpg
+[generator-cmd-demo]: https://user-images.githubusercontent.com/5957244/50083474-36875e80-01f4-11e9-89fc-b5bdfb7fba71.gif
+[npm-image]: https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.0.1&x2=0
+[npm-url]: https://npmjs.org/package/generator-ngx-lib
 [travis-image]: https://api.travis-ci.org/tonysamperi/generator-ngx-lib.svg?branch=master
 [travis-url]: https://travis-ci.org/tonysamperi/generator-ngx-lib
 [daviddm-image]: https://david-dm.org/tonysamperi/generator-ngx-lib.svg?theme=shields.io
