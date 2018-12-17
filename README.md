@@ -491,7 +491,7 @@ MIT © [Tony Samperi](http://tonysamperi.github.io)
 - Info updated!
 
 
-[generator-ngx-lib-banner]: https://user-images.githubusercontent.com/5957244/50081526-ff627e80-01ee-11e9-8789-2abcbb522e05.jpg
+[generator-ngx-lib-banner]: https://user-images.githubusercontent.com/5957244/50083676-ce854800-01f4-11e9-8646-bbae4895c081.png
 [generator-cmd-demo]: https://user-images.githubusercontent.com/5957244/50083474-36875e80-01f4-11e9-89fc-b5bdfb7fba71.gif
 [npm-image]: https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.0.1&x2=0
 [npm-url]: https://npmjs.org/package/generator-ngx-lib
