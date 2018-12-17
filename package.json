@@ -1,0 +1,43 @@
+{
+  "name": "generator-ngx-libtwo",
+  "version": "1.0.0-alpha",
+  "description": "Generator to create an Angular 5+ library",
+  "homepage": "https://github.com/tonysamperi/generator-ngx-libtwo",
+  "author": {
+    "name": "Tony Samperi",
+    "email": "github@tonysamperi.it",
+    "url": "https://tonysamperi.github.io"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator",
+    "angular",
+    "library"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "underscore.string": "^3.3.4",
+    "yosay": "^2.0.0",
+	"yeoman-generator": "^2.0.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.4",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nsp": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "yeoman-assert": "^3.1.1"
+  },
+  "repository": "tonysamperi/generator-ngx-libtwo",
+  "scripts": {
+    "prepublishOnly": "gulp prepublish",
+    "test": "gulp"
+  }
+}

@@ -1,0 +1,10 @@
+<div class="sample-box-a" *ngIf="showA">
+	<h1>BOX A</h1>
+	<ng-content></ng-content>
+	<button (click)="showA = !showA">SHOW B</button>
+</div>
+<div class="sample-box-b" *ngIf="!showA">
+	<h1>BOX B</h1>
+	<ng-content></ng-content>
+	<button (click)="showA = !showA">SHOW A</button>
+</div>
