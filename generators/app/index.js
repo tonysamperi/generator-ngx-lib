@@ -203,7 +203,7 @@ module.exports = class extends Generator {
             {src: "_gulpfile.js", dest: "gulpfile.js"},
             {src: "_README.md", dest: "README.md"},
             {src: "_changelog.md", dest: "changelog.md"},
-            {src: "_gitignore", dest: "ng-package.json"},
+            {src: "_ng-package.json", dest: "ng-package.json"},
             {src: "_travis.yml", dest: ".travis.yml"},
             {src: "_gitignore", dest: ".gitignore"},
             {src: "_tsconfig.json", dest: "tsconfig.json"},
