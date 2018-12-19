@@ -502,6 +502,8 @@ MIT © [Tony Samperi](http://tonysamperi.github.io)
 ### v1.0.5
 - Removed useless deps from packages
 
+### v1.0.6
+- Fixed Karma config
 
 [generator-ngx-lib-banner]: https://user-images.githubusercontent.com/5957244/50083676-ce854800-01f4-11e9-8646-bbae4895c081.png
 [generator-cmd-demo]: https://user-images.githubusercontent.com/5957244/50083474-36875e80-01f4-11e9-89fc-b5bdfb7fba71.gif

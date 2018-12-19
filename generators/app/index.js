@@ -206,6 +206,7 @@ module.exports = class extends Generator {
             {src: "_ng-package.json", dest: "ng-package.json"},
             {src: "_travis.yml", dest: ".travis.yml"},
             {src: "_gitignore", dest: ".gitignore"},
+            {src: "_karma.config.js", dest: "karma.config.js"},
             {src: "_tsconfig.json", dest: "tsconfig.json"},
             {src: "_tslint.json", dest: "tslint.json"},
             {src: "_tsrefs/_public_api.ts", dest: "lib/public_api.ts"},
