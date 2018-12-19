@@ -1,6 +1,6 @@
 {
   "name": "generator-ngx-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generator to create an Angular 5+ library",
   "homepage": "https://github.com/tonysamperi/generator-ngx-lib",
   "author": {
@@ -26,9 +26,6 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-coveralls": "^0.1.4",
-    "gulp-eslint": "^2.0.0",
-    "gulp-exclude-gitignore": "^1.0.0",
     "gulp-istanbul": "^0.10.4",
     "gulp-mocha": "^2.2.0",
     "gulp-plumber": "^1.1.0",
