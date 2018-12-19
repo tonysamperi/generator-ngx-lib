@@ -1,5 +1,5 @@
 {
-  "name": "<%= props.scope %><%= props.libraryName.kebabCase %>",
+  "name": "<%= props.scope.original %><%= props.libraryName.kebabCase %>",
   "lint": [
     {
       "files": "src/**/*.ts",

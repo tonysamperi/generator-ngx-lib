@@ -17,7 +17,7 @@
       "dom"
     ],
     "paths": {
-      "<%= props.scope %><%= props.libraryName.kebabCase %>": [
+      "<%= props.scope.original %><%= props.libraryName.kebabCase %>": [
         "lib"
       ]
     }

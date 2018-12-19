@@ -11,7 +11,8 @@ var toCamelCase = function (string) {
     });
 };
 
-var toPascalCase = function (string) {
+var toPascalCase = function (string, filterChars) {
+    filterChars && (string = string.replace(/[@\/]/g, ""));
     var firstLetter = string.charAt(0);
     return firstLetter.toUpperCase() + toCamelCase(string.slice(1));
 };
@@ -37,7 +38,7 @@ module.exports = class extends Generator {
                 message: "Your full name:",
                 validate: function (input) {
                     if (/.+/.test(input)) {
-                        return true;
+                        return !0;
                     }
                     return "Please enter your full name";
                 },
@@ -49,7 +50,7 @@ module.exports = class extends Generator {
                 message: "Your email address:",
                 validate: function (input) {
                     if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(input)) {
-                        return true;
+                        return !0;
                     }
                     return "Please enter a valid email address";
                 },
@@ -73,6 +74,7 @@ module.exports = class extends Generator {
                     return !x || x.indexOf("@") === 0;
                 },
                 filter: function (x) {
+                    console.info("INPUT: " + x);
                     return x ? x + "/" : "";
                 }
             },
@@ -82,7 +84,7 @@ module.exports = class extends Generator {
                 message: "Angular version (5 / 6 / 7):",
                 validate: function (input) {
                     if (/^[5|6|7]$/.test(input)) {
-                        return true;
+                        return !0;
                     }
                     return "Please enter a valid angular version!";
                 },
@@ -93,7 +95,7 @@ module.exports = class extends Generator {
                 name: "gitRepositoryUrl",
                 message: "Git repository url",
                 default: "https://github.com/johndoe/my-cool-lib",
-                store: true
+                store: !0
             }
         ];
 
@@ -112,7 +114,10 @@ module.exports = class extends Generator {
                 },
                 gitRepositoryUrl: props.gitRepositoryUrl,
                 angularVersion: parseInt(props.angularVersion),
-                scope: props.scope
+                scope: {
+                    original: props.scope,
+                    capitalized: toPascalCase(props.scope, !0)
+                },
             };
 
         });
@@ -223,6 +228,6 @@ module.exports = class extends Generator {
     }
 
     install() {
-        this.installDependencies({bower: false});
+        this.installDependencies({bower: !1});
     }
 };

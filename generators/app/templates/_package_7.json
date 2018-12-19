@@ -1,5 +1,5 @@
 {
-  "name": "<%= props.scope %><%= props.libraryName.kebabCase %>",
+  "name": "<%= props.scope.original %><%= props.libraryName.kebabCase %>",
   "version": "0.0.1",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@3846masa/axios-cookiejar-support": "^0.4.2",
-	"@angular/animations": "^7.0.0",
+    "@angular/animations": "^7.0.0",
     "@angular/common": "^7.0.0",
     "@angular/compiler": "^7.0.0",
     "@angular/core": "^7.0.0",
@@ -90,6 +90,7 @@
     "Angular6",
     "Angular5+",
     "Library",
-    "<%= props.libraryName.pascalCase %>"
+    "<%= props.libraryName.pascalCase %>",
+    "<%= props.scope.capitalized %>"
   ]
 }
