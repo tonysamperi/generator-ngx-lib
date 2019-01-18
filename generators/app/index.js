@@ -154,12 +154,6 @@ module.exports = class extends Generator {
         }
 
         // Copy directories
-
-        this.fs.copyTpl(
-            this.templatePath("_environments/**/*"),
-            this.destinationPath("environments")
-        );
-
         this.fs.copyTpl(
             this.templatePath("_lib/**/*"),
             this.destinationPath("lib")
