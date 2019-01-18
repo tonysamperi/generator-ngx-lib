@@ -172,11 +172,20 @@ module.exports = class extends Generator {
             }
         );
 
-        // Clear root scss
+        // FILES DEPENDING ON VERSION
         if (this.props.angularVersion === 5) {
+            // Clearing root SCSS
             this.fs.copyTpl(
                 this.templatePath("_styles/root.scss"),
                 this.destinationPath("src/styles.scss"),
+                {
+                    props: this.props
+                }
+            );
+            // V6 and V7 don't need karma config, see angular.json
+            this.fs.copyTpl(
+                this.templatePath("_karma.config.js"),
+                this.destinationPath("karma.config.js"),
                 {
                     props: this.props
                 }
@@ -194,18 +203,17 @@ module.exports = class extends Generator {
 
         // Templates with different destination than source
         var otherFiles = [
-            {src: "_gulpfile.js", dest: "gulpfile.js"},
-            {src: "_README.md", dest: "README.md"},
-            {src: "_changelog.md", dest: "changelog.md"},
-            {src: "_ng-package.json", dest: "ng-package.json"},
-            {src: "_travis.yml", dest: ".travis.yml"},
-            {src: "_gitignore", dest: ".gitignore"},
-            {src: "_karma.config.js", dest: "karma.config.js"},
-            {src: "_tsconfig.json", dest: "tsconfig.json"},
-            {src: "_tslint.json", dest: "tslint.json"},
-            {src: "_tsrefs/_public_api.ts", dest: "lib/public_api.ts"},
-            {src: "_tsrefs/_sample.module.ts", dest: "lib/" + this.props.libraryName.kebabCase + ".module.ts"},
-            {src: "_tsrefs/_app.module.ts", dest: "src/app/app.module.ts"}
+            { src: "_gulpfile.js", dest: "gulpfile.js" },
+            { src: "_README.md", dest: "README.md" },
+            { src: "_changelog.md", dest: "changelog.md" },
+            { src: "_ng-package.json", dest: "ng-package.json" },
+            { src: "_travis.yml", dest: ".travis.yml" },
+            { src: "_gitignore", dest: ".gitignore" },
+            { src: "_tsconfig.json", dest: "tsconfig.json" },
+            { src: "_tslint.json", dest: "tslint.json" },
+            { src: "_tsrefs/_public_api.ts", dest: "lib/public_api.ts" },
+            { src: "_tsrefs/_sample.module.ts", dest: "lib/" + this.props.libraryName.kebabCase + ".module.ts" },
+            { src: "_tsrefs/_app.module.ts", dest: "src/app/app.module.ts" }
         ];
 
         // Copy otherFiles
@@ -223,6 +231,6 @@ module.exports = class extends Generator {
     }
 
     install() {
-        this.installDependencies({bower: !1});
+        this.installDependencies({ bower: !1 });
     }
 };
