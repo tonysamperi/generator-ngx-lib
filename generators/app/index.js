@@ -81,14 +81,14 @@ module.exports = class extends Generator {
             {
                 type: "input",
                 name: "angularVersion",
-                message: "Angular version (5 / 6 / 7):",
+                message: "Angular version (5 / 6 / 7 / 8):",
                 validate: function (input) {
-                    if (/^[5|6|7]$/.test(input)) {
+                    if (/^[5|6|7|8]$/.test(input)) {
                         return !0;
                     }
                     return "Please enter a valid angular version!";
                 },
-                default: 7
+                default: 8
             },
             {
                 type: "input",
