@@ -29,7 +29,7 @@
     "zone.js": "^0.9.1"
   },
   "scripts": {
-    "build:lib": "gulp build && npm pack dist",
+    "build:lib": "gulp build && npm pack ./dist",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
