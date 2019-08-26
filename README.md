@@ -506,6 +506,9 @@ MIT © [Tony Samperi](http://tonysamperi.github.io)
 - Fixed Karma config
 
 ### v1.0.7
+- Fixed Karma config for Angular 6 and 7
+
+### v1.0.8
 - Added support for Angular v8
 
 [generator-ngx-lib-banner]: https://user-images.githubusercontent.com/5957244/50083676-ce854800-01f4-11e9-8646-bbae4895c081.png
