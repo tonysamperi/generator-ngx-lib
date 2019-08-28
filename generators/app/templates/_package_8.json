@@ -1,0 +1,80 @@
+{
+  "name": "<%= props.scope.original %><%= props.libraryName.kebabCase %>",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "<%= props.gitRepositoryUrl %>"
+  },
+  "author": {
+    "name": "<%= props.author.name %>",
+    "email": "<%= props.author.email %>"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "<%= props.gitRepositoryUrl %>/issues"
+  },
+  "dependencies": {
+    "@angular/animations": "^8.0.0",
+    "@angular/common": "^8.0.0",
+    "@angular/compiler": "^8.0.0",
+    "@angular/core": "^8.0.0",
+    "@angular/forms": "^8.0.0",
+    "@angular/platform-browser": "^8.0.0",
+    "@angular/platform-browser-dynamic": "^8.0.0",
+    "@angular/router": "^8.0.0",
+    "@angular/service-worker": "^8.0.0",
+    "rxjs": "^6.4.0",
+    "tether": "1.4.5",
+    "tslib": "^1.9.0",
+    "zone.js": "^0.9.1"
+  },
+  "scripts": {
+    "build:lib": "gulp build && npm pack ./dist",
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "ng-packagr": "^5.1.0",
+    "node-sass": "4.9.3",
+    "run-sequence": "^2.2.1",
+    "tslint-consistent-codestyle": "^1.13.3",
+    "@angular/cli": "^8.0.0",
+    "@angular/compiler-cli": "^8.0.0",
+    "@angular/language-service": "^8.0.0",
+    "@types/jasmine": "~3.3.8",
+    "@types/jasminewd2": "~2.0.5",
+    "@types/node": "~10.12.0",
+    "codelyzer": "^5.0.0",
+    "concurrently": "^4.0.1",
+    "jasmine-core": "~3.4.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^2.0.4",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "protractor": "~5.4.1",
+    "ts-node": "^7.0.1",
+    "tslint": "~5.15.0",
+    "typescript": "^3.4.3",
+    "@angular-devkit/build-angular": "~0.800.0"
+  },
+  "keywords": [
+    "Angular",
+    "Angular5",
+    "Angular6",
+    "Angular7",
+    "Angular8",
+    "Angular5+",
+    "Library",
+    "<%= props.libraryName.pascalCase %>",
+    "<%= props.scope.capitalized %>"
+  ]
+}

@@ -6,7 +6,7 @@
 
 ## Introduction to generator-ngx-lib
 
-This project is the definitive solution for creating Angular 5 6 and 7 libs
+This project is the definitive solution for creating Angular 5 6 7 and 8 libs
 
 If you want to create an Angular library with directives, services and/or pipes, then this generator is just what you need.
 
@@ -16,7 +16,7 @@ Watch [Jason Aden's talk](https://www.youtube.com/watch?v=unICbsPGFIA) to learn 
 
 More specifically, the latest version of this generator:
 
-- supports Angular 5, 6 and 7
+- supports Angular 5, 6, 7 and 8
 - creates and configures `package.json` for the development of your library
 - creates and configures `tsconfig.json` for your editor during development
 - creates and configures `tslint.json` for linting and consistent codestyling purposes
@@ -504,6 +504,12 @@ MIT © [Tony Samperi](http://tonysamperi.github.io)
 
 ### v1.0.6
 - Fixed Karma config
+
+### v1.0.7
+- Fixed Karma config for Angular 6 and 7
+
+### v1.0.8
+- Added support for Angular v8
 
 [generator-ngx-lib-banner]: https://user-images.githubusercontent.com/5957244/50083676-ce854800-01f4-11e9-8646-bbae4895c081.png
 [generator-cmd-demo]: https://user-images.githubusercontent.com/5957244/50083474-36875e80-01f4-11e9-89fc-b5bdfb7fba71.gif
