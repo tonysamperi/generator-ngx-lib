@@ -511,6 +511,10 @@ MIT © [Tony Samperi](http://tonysamperi.github.io)
 ### v1.0.8
 - Added support for Angular v8
 
+## Thanks to
+
+[Rich Ott](https://github.com/Rich-Ott) for pulling an update to support Angular 8.
+
 [generator-ngx-lib-banner]: https://user-images.githubusercontent.com/5957244/50083676-ce854800-01f4-11e9-8646-bbae4895c081.png
 [generator-cmd-demo]: https://user-images.githubusercontent.com/5957244/50083474-36875e80-01f4-11e9-89fc-b5bdfb7fba71.gif
 [npm-image]: https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.0.6&x2=0
